@@ -10,9 +10,12 @@ function input(){
       output: process.stdout
     })
     
-    readline.question(`Bot Token: `, token => {
+
     
-      
+
+    readline.question(`Bot Token: `, token => {
+     
+       
     readline.question(`Bot Status: `, status => {
       
     
@@ -21,6 +24,9 @@ function input(){
     console.log(chalk.bold.green("Setup Complete"))
     readline.close();
     
+    const complete = require('./complete.js');
+
+    complete(token, status)
     
     })
     })

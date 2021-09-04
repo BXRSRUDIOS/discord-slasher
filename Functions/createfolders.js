@@ -1,3 +1,9 @@
-const fs = require("fs")
+const fs = require("fs");
 
-fs.mkdir()
+function createfolders() {
+    fs.mkdir("./handlers")
+    fs.mkdir("./SlashCommands")
+    fs.mkdir("./events")
+}
+
+module.exports = createfolders
